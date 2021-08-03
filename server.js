@@ -11,7 +11,7 @@ server.use(express.json());
 
 const PORT = process.env.PORT
 
-mongoose.connect('mongodb://localhost:27017/Colors',{ useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://osama:osama123@cluster0-shard-00-00.rchco.mongodb.net:27017,cluster0-shard-00-01.rchco.mongodb.net:27017,cluster0-shard-00-02.rchco.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-p6gqv9-shard-0&authSource=admin&retryWrites=true&w=majority');
 
 //schema
 const dataSchema = new mongoose.Schema({
